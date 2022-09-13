@@ -1,0 +1,55 @@
+header{
+    background-color: red;
+    width: 100%;
+    height: 50px;
+}
+
+footer{
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+}
+
+.section1{
+    background-color: green;
+    width: 50%;
+    height: 100%;
+}
+
+.section2{
+    background-color: yellow;
+    width: 50%;
+    height: 100%;
+}
+
+.articles{
+    display: flex;
+    width: 100%;
+    height: 95vh;
+    background-color: black;
+}
+
+div{
+    display: block;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 1000px){
+    .articles{
+        display: block;
+    }
+
+    .section1, .section2{
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex 2 - Select / Option</title>
+</head>
+<body>
+    <label for="brand">Choisissez votre marque : </label>
+    <select id="brand" name="brand">
+      <option value="asus">Asus</option>
+      <option value="lenovo">Lenovo</option>
+      <option value="hp">HP</option>
+      <option value="dell">Dell</option>
+    </select>
+
+    <br>
+    <br>
+
+    <form method="get">
+        <label for="fname">First name :<br>
+            <input type="text" id="fname" placeholder="John Doe" value="">
+        </label><br>
+        <label for="fav_langage"><br>
+            <input type="radio" id="fav_langage" value="html">HTML
+            <input type="radio" name="fav_langage" value="css">CSS
+            <input type="radio" name="fav_langage" value="javascript">CSS
+        </label><br>
+        <label for="bike"><br>
+            <input type="checkbox" id="bike" value="bike">Je possède un vélo
+        </label><br>
+        <label for="car"><br>
+            <input type="checkbox" id="car" value="car">Je possède une voiture
+        </label><br>
+        <label for="boat"><br>
+            <input type="checkbox" id="boat" value="boat">Je possède un bateau
+        </label><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/HotelResa.css"/>
+    <title>Hotel Reservation</title>
+</head>
+<body>
+
+    <div class="headerTitle">
+        <h1>Votre réservation d'hôtel</h1>
+        <h4>* champs obligatoires</h4>
+    </div>
+
+    <div class="wrapper">
+        <div class="form">
+            <form method="get">
+                <!-- Nom -->
+                <label for="lname">Votre nom* :<br>
+                    <input type="text" id="lname" placeholder="Nom de famille">
+                </label><br>
+
+                <!-- Prénom -->
+                <label for="fname">Votre prénom* :<br>
+                    <input type="text" id="fname" placeholder="Votre prénom">
+                </label><br>
+
+                <!-- Numéro de téléphone-->
+                <label for="phone">Votre numéro de téléphone* :<br>
+                    <input type="tel" id="phone" placeholder="0254795852">
+                </label><br>
+
+                <!-- Email -->
+                <label for="email">Votre email* :<br>
+                    <input type="email" id="email" placeholder="john.doe@gmail.com">
+                </label><br>
+
+                <!-- Ville -->
+                <label for="town">Votre ville :<br>
+                    <select id="town" name="town">
+                        <option value="paris">Paris</option>
+                        <option value="bordeaux">Bordeaux</option>
+                        <option value="lyon">Lyon</option>
+                        <option value="lille">Lille</option>
+                        <option value="marseille">Marseille</option>
+                    </select>
+                </label><br>
+
+                <!-- Date d'arrivée -->
+                <label for="arrivalDate">Date d'arrivée*<br>
+                    <input type="date" id="arrivalDate">
+                </label><br>
+
+                <!-- Nombre de personnes -->
+                <label for="nbPeople">Nombre de personnes* : <br>
+                    <input type="number" placeholder="4" id="nbPeople" min="0">
+                </label><br>
+
+                <!-- Options -->
+                <label for="options">Vos options :
+                    <input type="checkbox" id="options">Mini Bar
+                    <input type="checkbox" id="options">Jaccuzi
+                    <input type="checkbox" id="options">Climatisation
+                </label><br>
+
+                <!-- Commentaire -->
+                <label for="commentary">Un commentaire ?<br>
+                    <textarea id="commentary" class="textareaComment" placeholder="Veuillez saisir un commentaire si besoin" cols="100" rows="5"></textarea>
+                </label><br>
+
+                <!-- CGV -->
+                <label for="cgvu">Acceptation des règles générales de ventes (CGV)* :<br>
+                    <input type="radio" id="cgvu" name="cgvu" value="false"> Je refuse
+                    <input type="radio" id="cgvu" name="cgvu" value="true"> J'accepte
+                </label><br>
+
+                <!-- Valider le formulaire -->
+                <button type="submit">Valider la réservation</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

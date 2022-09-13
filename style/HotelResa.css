@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+
+}
+
+.headerTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+.wrapper{
+    width: 650px;
+}
+
+.textareaComment{
+    width: 99.6%;
+}
